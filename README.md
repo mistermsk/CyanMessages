@@ -8,6 +8,7 @@ Features:
 To-do:
  - Add support to some punishment plugin. (E.g. AdvancedBan, LiteBans, or make a custom ban plugin :P)
  - Multi language support.
+ - Customizable config. (Prefix,  chat format, etc.)
 
 Permissions: ("*" doesn't work)
  - cyanmessages.helpop.send -> Send HelpOP messages
