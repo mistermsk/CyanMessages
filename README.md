@@ -19,3 +19,4 @@ Commands:
  - /helpop <message>
  - /m <player> <message> (Aliases: m, pm, msg, tell, message)
  - /r <message> (Alias: reply)
+ - /msgtoggle
