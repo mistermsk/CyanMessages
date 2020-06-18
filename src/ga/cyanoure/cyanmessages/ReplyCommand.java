@@ -8,7 +8,7 @@ import net.md_5.bungee.api.plugin.Command;
 public class ReplyCommand extends Command{
 	Main plugin;
 	public ReplyCommand(Main plugin) {
-		super("r","cyanmessages.private","reply");
+		super("r","cyanmessages.private","reply","replyto","ereply","er");
 		this.plugin = plugin;
 	}
 	

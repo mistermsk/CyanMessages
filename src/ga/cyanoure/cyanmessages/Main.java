@@ -26,5 +26,7 @@ public class Main extends Plugin{
         getProxy().getPluginManager().registerCommand(this, new PMCommand(this));
         getProxy().getPluginManager().registerCommand(this, new ReplyCommand(this));
         getProxy().getPluginManager().registerCommand(this, new HelpopCommand(this));
+        getProxy().getPluginManager().registerCommand(this, new ToggleCommand(this));
+        getProxy().getPluginManager().registerListener(this, new Events(this));
     }
 }
