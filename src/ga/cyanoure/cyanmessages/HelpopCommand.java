@@ -34,7 +34,7 @@ public class HelpopCommand extends Command{
 				}
 			}
 		}else {
-			from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cHasználat: /helpop <üzenet>"));
+			from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cUse: /helpop <message>"));
 		}
 	}
 }

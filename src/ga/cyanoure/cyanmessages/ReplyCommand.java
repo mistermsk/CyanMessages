@@ -24,7 +24,7 @@ public class ReplyCommand extends Command{
 				
 			this.plugin.pm.replyMessage(from, msg);
 		}else {
-			from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cHasználat: /r <üzenet>"));
+			from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cUse: /r <message>"));
 		}
 	}
 }

@@ -25,7 +25,7 @@ public class PMCommand extends Command{
 				
 			this.plugin.pm.sendMessage(from, to, msg);
 		}else {
-			from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cHasználat: /m <játékosnév> <üzenet>"));
+			from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cUse: /m <player name> <message>"));
 		}
 	}
 }

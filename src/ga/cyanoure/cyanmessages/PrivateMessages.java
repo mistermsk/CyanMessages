@@ -24,8 +24,8 @@ public class PrivateMessages {
 					if(!DisabledList.contains(to.getUniqueId()) && to.hasPermission("cyanmessages.private")) {
 						String SenderName = from.getName();
 						String ReceiverName = to.getName();
-						String msg1 = "&8[&cÉn &3»&6 "+ReceiverName+"&8] &7"+message;
-						String msg2 = "&8[&6"+SenderName+" &3»&c Én&8] &7"+message;
+						String msg1 = "&8[&cYou &3»&6 "+ReceiverName+"&8] &7"+message;
+						String msg2 = "&8[&6"+SenderName+" &3»&c You&8] &7"+message;
 						
 						from.sendMessage(ChatColor.translateAlternateColorCodes('&', msg1));
 						to.sendMessage(ChatColor.translateAlternateColorCodes('&', msg2));
@@ -40,19 +40,19 @@ public class PrivateMessages {
 						replies.put(from.getUniqueId(), to.getUniqueId());
 						replies.put(to.getUniqueId(), from.getUniqueId());
 					}else {
-						from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cA játékosnak ki vannak kapcsolva a privát üzenetei!"));
+						from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cThe players private messages are turned off!"));
 					}
 				}else {
-					from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cMagadnak nem küldhetsz üzenetet!"));
+					from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cYou cannot send a message to yourself!"));
 				}
 			}else {
 				if(replies.containsKey(from.getUniqueId())) {
 					replies.remove(from.getUniqueId());
 				}
-				from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cA játékos nem található!"));
+				from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cPlayer not found!"));
 			}
 		}else {
-			from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cNem tudsz üzenetet küldeni, ha ki vannak kapcsolva a privát üzeneteid!"));
+			from.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cYou cannot send messages when your private messages are turned off!"));
 		}
 	}
 	
